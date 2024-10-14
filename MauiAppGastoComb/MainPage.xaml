@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppGastoComb.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label Text="Digite a Marca do seu Carro:" FontAttributes="Bold"/>
+            <Entry x:Name="Marca_Button" Placeholder="ex:Honda"/>
+
+            <Label Text="Digite o Modelo do seu Carro:" FontAttributes="Bold"/>
+            <Entry x:Name="Modelo_Button" Placeholder="ex:Civic"/>
+
+            <Label Text="Digite o Preço do Etanol:" FontAttributes="Bold"/>
+            <Entry x:Name="Etanol_Button" Placeholder="R$ 0.00"/>
+
+            <Label Text="Digite o Preço da Gasolina:" FontAttributes="Bold"/>
+            <Entry x:Name="Gasolina_Button" Placeholder="R$ 0.00"/>
+
+            <Button Text="Qual compensa mais?" Clicked="Button_Clicked" BackgroundColor="#080f4d" TextColor="#fcfdff" FontAttributes="Bold"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
